@@ -1,8 +1,7 @@
-//half pyramid pattern.
 #include<stdio.h>
 int main()
 {
-	int i, j, rows;
+	int rows, i, j;
 	float m;
 	do {
 		printf("Enter the number of rows: ");
@@ -13,12 +12,12 @@ int main()
 			printf("You've entered a decimal number! Please try again...\n");
 		}
 	} while(m < 0 || floor(m) != ceil(m));
-    rows=m;
-	for(i=1;i<=rows;i++){
-		for(j=1;j<=i;j++){
-			printf("%d ",j);
-		}
-		printf("\n");
+	rows=m;
+	for(i=rows;i>=0;i--){
+		for(j=i-1;j>=0;j--){
+		printf("%d",j);
+	}
+	printf("\n");
 	}
 	return 0;
 }

@@ -2,8 +2,17 @@
 int main()
 {
 	int i,j,k,space,rows;
-	printf("Enter the number of rows: ");
-	scanf("%d",&rows);
+	float m;
+	do {
+		printf("Enter the number of rows: ");
+		scanf("%f", &m);
+		if(m < 0) {
+			printf("You've entered a negative integer! Please try again...\n");
+		} else if(floor(m) != ceil(m)) {
+			printf("You've entered a decimal number! Please try again...\n");
+		}
+	} while(m < 0 || floor(m) != ceil(m));
+	rows=m;
 	for(i=1;i<=rows;i++)
 	{
 		for(space=rows-i;space>0;space--)
