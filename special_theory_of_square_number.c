@@ -1,6 +1,6 @@
-//An important property of square numbers: If a natural number is a square number, then it
+//Q.3) An important property of square numbers: If a natural number is a square number, then it
 //has to be the sum of Successive Odd Numbers starting from 1. like 25=1+3+5+7+9
-//Now using this property, find the square root of any perfect square.
+//Now using this proQperty, find the square root of any perfect square.
 #include<stdio.h>
 int main()
 {
